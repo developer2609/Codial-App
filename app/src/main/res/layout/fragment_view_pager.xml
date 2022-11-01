@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txt_guruh_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:text="@string/app_name"
+        android:textColor="#1E5379"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_txt_son"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_txt_son"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15.6dp"
+        android:textColor="#1E5379"
+        android:layout_marginLeft="39dp"
+        android:text="O'quvchilar soni:"
+        app:layout_constraintRight_toLeftOf="@id/tv_son"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_guruh_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_son"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="91dp"
+        android:text="10"
+        android:textColor="#1E5379"
+        android:textSize="15.6dp"
+        app:layout_constraintRight_toLeftOf="@id/korish_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/tv_txt_son"
+        app:layout_constraintTop_toBottomOf="@id/txt_guruh_name" />
+
+    <LinearLayout
+        android:id="@+id/delete_parent"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:background="@drawable/aylana"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginRight="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/edit_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_parent"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:background="@drawable/aylana"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginRight="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/delete_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/ic_baseline_edit_24" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/korish_parent"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="6.5dp"
+        android:layout_marginBottom="13dp"
+        android:background="@drawable/aylana"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/edit_parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:src="@drawable/korish" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CodialApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kurslar">Kurslar</string>
+    <string name="guruhlar">Guruhlar</string>
+    <string name="mentorlar">Mentorlar</string>
+    <string name="about">About</string>
+    <string name="name">Name</string>
+    <string name="kurs_nomini_kiriting">Kurs nomini kiriting</string>
+</resources>

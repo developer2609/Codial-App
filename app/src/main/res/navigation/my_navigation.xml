@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.codialapp.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_courseFragment"
+            app:destination="@id/courseFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_guruhFragment"
+            app:destination="@id/guruhFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseFragment"
+        android:name="com.example.codialapp.fragment.CourseFragment"
+        android:label="fragment_course"
+        tools:layout="@layout/fragment_course" >
+        <action
+            android:id="@+id/action_courseFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+        <action
+            android:id="@+id/action_courseFragment_to_mentorFragment"
+            app:destination="@id/mentorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.codialapp.fragment.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/mentorFragment"
+        android:name="com.example.codialapp.fragment.MentorFragment"
+        android:label="fragment_mentor"
+        tools:layout="@layout/fragment_mentor" >
+        <action
+            android:id="@+id/action_mentorFragment_to_mentorAddFragment"
+            app:destination="@id/mentorAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorAddFragment"
+        android:name="com.example.codialapp.fragment.MentorAddFragment"
+        android:label="MentorAddFragment" />
+    <fragment
+        android:id="@+id/guruhFragment"
+        android:name="com.example.codialapp.fragment.GuruhFragment"
+        android:label="fragment_guruh"
+        tools:layout="@layout/fragment_guruh" >
+        <action
+            android:id="@+id/action_guruhFragment_to_guruhListFragment"
+            app:destination="@id/guruhListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guruhListFragment"
+        android:name="com.example.codialapp.fragment.GuruhListFragment"
+        android:label="fragment_guruh_list"
+        tools:layout="@layout/fragment_guruh_list" >
+        <action
+            android:id="@+id/action_guruhListFragment_to_guruhQoshishFragment"
+            app:destination="@id/guruhQoshishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guruhQoshishFragment"
+        android:name="com.example.codialapp.fragment.GuruhQoshishFragment"
+        android:label="fragment_guruh_qoshish"
+        tools:layout="@layout/fragment_guruh_qoshish" />
+</navigation>
